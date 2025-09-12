@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;   
+} 
+body {
+ background-image: url(/bgi.jpg);
+ height: 100vh;
+    background-repeat: no-repeat;
+          background-size: cover;  
+      background-position: center; 
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        background: rgba(255, 255, 255, 0.25); /* semi-transparent */
+    backdrop-filter: blur(10px);           /* blur behind */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+
+}
+#flight{
+    padding-left: 30px;
+}
+#logo {
+    padding-left: 35px;
+
+}
+.logo{
+    display: flex;
+    justify-content: start;
+}
+.right{
+    display: flex;
+    width: 70vw;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.signup{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 9px;
+}
+.herotxt h5 {
+    font-size: 1.8rem;
+    color: rgb(100, 77, 120);
+}
+.herotxt p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.herotxt h2{
+    font-size: 6rem;
+      line-height: 1;
+      
+}
+.herotxt p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+     color: rgb(100, 77, 120);
+
+}
+.hero {
+    margin-top: 8rem;
+   position: relative;
+}
+.hero img{
+    position: absolute;
+    top: 0;
+    right: 0;
+     width: 30%; 
+     margin-right: 10rem;
+}
+.herotxt{
+    position: absolute;
+    left: 10rem;
+   
+      max-width: 40%;   
+      height: auto;
+}
+.hero-btn {
+    margin-top: 2rem;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* gradient button */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
