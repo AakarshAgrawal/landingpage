@@ -7,22 +7,24 @@
 }
 
 body {
-  background-image: url(/bgi.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ background-image: radial-gradient(circle at center center, rgb(127, 62, 211),rgb(255,255,255));
   min-height: 100vh;
 }
 
 /* Navbar */
 .navbar {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;   /* make sure it spans full width */
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(233, 233, 233, 0.35);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
 }
 
 #flight {
@@ -46,19 +48,22 @@ body {
 }
 
 .signup {
+  background: rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 0 10px;
   height: 30px;
-  border: 2px solid rgb(69, 69, 69);
   border-radius: 9px;
 }
 
 /* Hero Section */
 .herotxt h5 {
   font-size: 1.8rem;
-  color: rgb(100, 77, 120);
+     color: rgb(56, 29, 79);
 }
 
 .herotxt h2 {
+  
   font-size: 5.5rem;
   line-height: 1.1;
 }
@@ -66,7 +71,7 @@ body {
 .herotxt p {
   margin-top: 1rem;
   font-size: 1.3rem;
-  color: rgb(100, 77, 120);
+      color: rgb(56, 29, 79);
 }
 
 .hero {
@@ -111,16 +116,24 @@ body {
     justify-content: center;
     align-items: center;
 }
-.topdestitext {
-    font-size: 1.5rem;
+
+.topdestitext h1 {
+   color: rgb(38, 28, 46);
+    font-family: alike, serif;
+   word-spacing: 3px;
+    font-size: 3.5rem;
+    font-weight: 1  00;
 }
 .card {
   width: 300px;
   height: auto;            /* let it grow with content */
-  background: white;
+ background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
   overflow: hidden;        /* keeps image corners rounded */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
 }
 .card img {
   width: 100%;             /* full width */
@@ -129,9 +142,13 @@ body {
   display: block;
 }
 .card-body {
+  
      color: rgb(100, 77, 120);
   padding: 1rem;
   text-align: center;
+}
+.card-body h3 {
+    color: black;
 }
 .cardcontainer {
   margin: 4rem auto;
@@ -139,4 +156,67 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
   gap: 2rem;               /* space between cards */
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+.formm {
+   background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.formm h2 {
+     font-family: alike, serif;
+}
+.formm p {
+    color: rgb(39, 27, 50);
+       margin: 1.1rem;
+     font-size: 0.8rem;
+     text-align: center;
+}
+.formcontainer  {
+ 
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+form {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  width: 10rem;
+}
+form input {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 9px;
+  border: none;
+  padding-left: 10px;
+}
+form button {
+  color: #ffffff;;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  height: 3rem;
+  width: 20rem;
+   border-radius: 9px;
+  border: none;
 }
