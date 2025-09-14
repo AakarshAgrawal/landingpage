@@ -217,6 +217,6 @@ form button {
   background: linear-gradient(135deg, #ff7e5f, #feb47b);
   height: 3rem;
   width: 20rem;
-   border-radius: 9px;
+   border-radius: 50px;
   border: none;
 }
